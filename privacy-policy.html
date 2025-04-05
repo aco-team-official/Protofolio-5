@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        :root {
+            --bg-color: #0d0d0d;
+            --text-color: #00ffcc;
+            --header-bg: linear-gradient(135deg, #1a1a1a, #3333ff);
+            --highlight-color: #ff00ff;
+        }
+        body {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--bg-color);
+            color: var(--text-color);
+        }
+        header {
+            background: var(--header-bg);
+            color: var(--text-color);
+            text-align: center;
+            padding: 50px 20px;
+            position: relative;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 10px 0 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+            animation: fadeIn 2s ease-in-out 0.5s;
+        }
+        header .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid var(--text-color);
+            margin: 0 auto 20px;
+            animation: glow 1.5s infinite alternate;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            position: relative;
+            color: var(--text-color);
+        }
+        .section h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background: var(--highlight-color);
+            margin-top: 10px;
+        }
+        .portfolio-item img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 0 10px var(--text-color);
+        }
+        .portfolio-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px var(--highlight-color);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1a1a1a;
+            color: var(--text-color);
+        }
+        footer a {
+            color: var(--highlight-color);
+            text-decoration: none;
+        }
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--highlight-color);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 10px var(--text-color);
+            }
+            to {
+                box-shadow: 0 0 20px var(--text-color);
+            }
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>privacy policy</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" class="back-to-home">Back to Home</a>
+                    </li>
+                </ul>
+            </nav>
+            <style>
+                .back-to-home {
+                    font-size: 1.2rem;
+                    color: var(--text-color);
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    border: 2px solid var(--text-color);
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+                }
+                .back-to-home:hover {
+                    background-color: var(--highlight-color);
+                    color: #fff;
+                    transform: scale(1.1);
+                }
+            </style>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Privacy Policy</h1>
+                <p>Learn how we handle your data and protect your privacy.</p>
+            </div>
+        </section>
+        <section class="content">
+            <div class="container">
+                <h2>Information We Collect</h2>
+                <p>We may collect personal information such as your name, email address, and other details when you interact with our website.</p>
+                <h2>How We Use Your Information</h2>
+                <p>We use your information to improve our services, respond to inquiries, and provide a better user experience.</p>
+                <h2>Data Protection</h2>
+                <p>We implement security measures to protect your data from unauthorized access or disclosure.</p>
+                <h2>Contact Us</h2>
+                <p>If you have any questions about this privacy policy, please contact us at <a href="mailto:info@example.com">info@example.com</a>.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Your Portfolio. All rights reserved.</p>
+           
+        </div>
+    </footer>
+</body>
+</html>

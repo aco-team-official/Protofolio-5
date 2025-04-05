@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const preloader = document.getElementById('preloader');
+                preloader.style.display = 'none';
+            }, 50000); // Display preloader for 5 seconds
+        });
+    </script>
+    <style>
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid var(--text-color);
+            border-top: 5px solid var(--highlight-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <script>
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            preloader.style.display = 'none';
+        });
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Designer Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0d0d0d;
+            --text-color: #00ffcc;
+            --header-bg: linear-gradient(135deg, #1a1a1a, #3333ff);
+            --highlight-color: #ff00ff;
+        }
+        body {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--bg-color);
+            color: var(--text-color);
+        }
+        header {
+            background: var(--header-bg);
+            color: var(--text-color);
+            text-align: center;
+            padding: 50px 20px;
+            position: relative;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 10px 0 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+            animation: fadeIn 2s ease-in-out 0.5s;
+        }
+        header .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid var(--text-color);
+            margin: 0 auto 20px;
+            animation: glow 1.5s infinite alternate;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            position: relative;
+            color: var(--text-color);
+        }
+        .section h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background: var(--highlight-color);
+            margin-top: 10px;
+        }
+        .portfolio-item img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 0 10px var(--text-color);
+        }
+        .portfolio-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px var(--highlight-color);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1a1a1a;
+            color: var(--text-color);
+        }
+        footer a {
+            color: var(--highlight-color);
+            text-decoration: none;
+        }
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--highlight-color);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 10px var(--text-color);
+            }
+            to {
+                box-shadow: 0 0 20px var(--text-color);
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Light/Dark</button>
+<head>
+    <header>
+        <img src="dog-4633734_640.jpg" alt="Profile Photo" class="profile-photo">
+        <h1>John Doe</h1>
+        <p>Graphic Designer | Digital Artist | UI/UX Specialist</p>
+    </header>
+</head>
+    <div class="container">
+        <section class="section">
+            <h2>About Me</h2>
+            
+        <div class="animated-details">
+            <p class="animated-text typing-animation" style="color: #39ff14; text-shadow: 0 0 5px #3b006b, 0 0 10px #39ff14;"></p>
+            I am a passionate graphic designer with over 5 years of experience in creating stunning visuals and user-friendly interfaces. My expertise lies in Adobe Creative Suite, Figma, and Sketch, allowing me to bring ideas to life through innovative design solutions. I have a keen eye for detail and a strong understanding of color theory, typography, and layout design. My work has been recognized in various design competitions, and I have collaborated with clients from diverse industries to elevate their brand identity. I believe that design is not just about aesthetics; it's about solving problems and enhancing user experiences. I strive to create designs that are not only visually appealing but also functional and intuitive. My design philosophy revolves around the idea that every project is a unique opportunity to tell a story. I approach each project with curiosity and an open mind, ensuring that the final product resonates with the target audience. I thrive on creativity and innovation, constantly pushing the boundaries of design to deliver unique and impactful solutions. My journey in the world of design has been fueled by a passion for storytelling through visuals and a commitment to excellence. When I'm not designing, you can find me exploring new art techniques, experimenting with digital tools, or seeking inspiration from the beauty of nature and architecture.
+            </p>
+        </div>
+        <style>
+            .typing-animation {
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid var(--highlight-color);
+            width: 0;
+            animation: typing 3s steps(40, end), blink 0.5s step-end infinite;
+            }
+            @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+            }
+            @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+            }
+        </style>
+        <style>
+            .animated-details {
+                margin-top: 20px;
+                animation: fadeInUp 1.5s ease-in-out;
+            }
+            .animated-text {
+                font-size: 1.1rem;
+                line-height: 1.6;
+                margin-bottom: 15px;
+                animation: slideIn 1.5s ease-in-out;
+            }
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            @keyframes slideIn {
+                from {
+                    opacity: 0;
+                    transform: translateX(-20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+        </style>
+        </section>
+        
+        </div>
+        <section class="section">
+            <h2>Portfolio</h2>
+            <div class="portfolio-item">
+            <img src="dog-7535633_640.jpg" alt="Project 1" style="width: 300px; height: auto; border-radius: 10px;">
+            <img src="dog-5858985_640.jpg" alt="Project 2" style="width: 300px; height: auto; border-radius: 10px;">
+            <img src="test-p1.jpg" alt="Project 3" style="width: 300px; height: auto; border-radius: 10px;">
+            </div>
+        </section>
+        <div class="wave-divider">
+            <!-- Wave animation removed -->
+        </div>
+        <section class="section">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me for collaborations or freelance work:</p>
+            <p>Email: john.doe@example.com</p>
+            <p>Phone: +123 456 7890</p>
+            <div class="loading-lines">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <style>
+                .loading-lines {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    margin-top: 20px;
+                }
+                .loading-lines .line {
+                    width: 10px;
+                    height: 50px;
+                    background: var(--highlight-color);
+                    animation: bounce 1.5s infinite ease-in-out;
+                }
+                .loading-lines .line:nth-child(2) {
+                    animation-delay: 0.2s;
+                }
+                .loading-lines .line:nth-child(3) {
+                    animation-delay: 0.4s;
+                }
+                @keyframes bounce {
+                    0%, 100% {
+                        transform: scaleY(1);
+                    }
+                    50% {
+                        transform: scaleY(1.5);
+                    }
+                }
+            </style>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2023 John Doe. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a></p>
+    </footer>
+    <script>
+        function toggleTheme() {
+            const root = document.documentElement;
+            if (root.style.getPropertyValue('--bg-color') === '#ffffff') {
+                root.style.setProperty('--bg-color', '#0d0d0d');
+                root.style.setProperty('--text-color', '#00ffcc');
+                root.style.setProperty('--header-bg', 'linear-gradient(135deg, #1a1a1a, #3333ff)');
+                root.style.setProperty('--highlight-color', '#ff00ff');
+            } else {
+                root.style.setProperty('--bg-color', '#ffffff');
+                root.style.setProperty('--text-color', '#333333');
+                root.style.setProperty('--header-bg', 'linear-gradient(135deg, #f0f0f0, #ccccff)');
+                root.style.setProperty('--highlight-color', '#ff0077');
+            }
+        }
+    </script>
+</body>
+</html>
+<script>
+    // Fade-in animation for sections
+    document.addEventListener('DOMContentLoaded', () => {
+        const sections = document.querySelectorAll('.section');
+        sections.forEach((section, index) => {
+            section.style.opacity = 0;
+            section.style.transition = `opacity 1s ease-in-out ${index * 0.5}s`;
+            setTimeout(() => {
+                section.style.opacity = 1;
+            }, 100);
+        });
+    });
+
+    // Bounce animation for portfolio images
+    const portfolioImages = document.querySelectorAll('.portfolio-item img');
+    portfolioImages.forEach((img) => {
+        img.addEventListener('mouseover', () => {
+            img.style.animation = 'bounce 0.5s ease-in-out';
+        });
+        img.addEventListener('animationend', () => {
+            img.style.animation = '';
+        });
+    });
+
+    // Keyframe for bounce animation
+    const styleSheet = document.createElement('style');
+    styleSheet.textContent = `
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    `;
+    document.head.appendChild(styleSheet);
+</script>
+<script>
+    // Cinematic scrolling effect
+    document.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+        const header = document.querySelector('header');
+        const sections = document.querySelectorAll('.section');
+
+        // Parallax effect for header
+        header.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
+
+        // Fade-in effect for sections on scroll
+        sections.forEach((section) => {
+            const sectionTop = section.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            if (sectionTop < windowHeight - 100) {
+                section.style.transform = 'translateY(0)';
+                section.style.opacity = '1';
+            } else {
+                section.style.transform = 'translateY(50px)';
+                section.style.opacity = '0';
+            }
+        });
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', (e) => {
+            e.preventDefault();
+            document.querySelector(anchor.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth',
+            });
+        });
+    });
+
+    // Cinematic zoom-in effect for portfolio images
+    portfolioImages.forEach((img) => {
+        img.addEventListener('click', () => {
+            img.style.transition = 'transform 0.5s ease-in-out';
+            img.style.transform = 'scale(1.2)';
+            setTimeout(() => {
+                img.style.transform = 'scale(1)';
+            }, 500);
+        });
+    });
+</script>
+<style>
+    /* Parallax effect for header */
+    header {
+        background-attachment: fixed;
+        background-size: cover;
+        transition: background-position 0.3s ease-in-out;
+    }
+
+    /* Initial state for sections */
+    .section {
+        transform: translateY(50px);
+        opacity: 0;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    /* Cinematic zoom-in effect for portfolio images */
+    .portfolio-item img {
+        cursor: pointer;
+    }
+</style>
+<script>
+    // Cinematic text reveal effect
+    document.addEventListener('DOMContentLoaded', () => {
+        const aboutText = document.querySelector('.animated-details p');
+        const textContent = aboutText.textContent;
+        aboutText.textContent = '';
+        let index = 0;
+
+        function revealText() {
+            if (index < textContent.length) {
+                aboutText.textContent += textContent[index];
+                index++;
+                setTimeout(revealText, 50); // Adjust speed of text reveal
+            }
+        }
+
+        revealText();
+    });
+
+    // Cinematic spotlight effect on hover
+    const profilePhoto = document.querySelector('.profile-photo');
+    profilePhoto.addEventListener('mouseover', () => {
+        profilePhoto.style.boxShadow = '0 0 50px var(--highlight-color)';
+        profilePhoto.style.transition = 'box-shadow 0.5s ease-in-out';
+    });
+    profilePhoto.addEventListener('mouseout', () => {
+        profilePhoto.style.boxShadow = '0 0 10px var(--text-color)';
+    });
+
+    // Cinematic fade-in for contact details
+    const contactSection = document.querySelector('section:last-of-type');
+    contactSection.style.opacity = 0;
+    contactSection.style.transform = 'translateY(50px)';
+    document.addEventListener('scroll', () => {
+        const sectionTop = contactSection.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (sectionTop < windowHeight - 100) {
+            contactSection.style.opacity = 1;
+            contactSection.style.transform = 'translateY(0)';
+            contactSection.style.transition = 'opacity 1s ease, transform 1s ease';
+        }
+    });
+
+    // Cinematic glow effect for portfolio items
+    const portfolioItems = document.querySelectorAll('.portfolio-item img');
+    portfolioItems.forEach((item) => {
+        item.addEventListener('mouseover', () => {
+            item.style.boxShadow = '0 0 30px var(--highlight-color)';
+            item.style.transition = 'box-shadow 0.5s ease-in-out';
+        });
+        item.addEventListener('mouseout', () => {
+            item.style.boxShadow = '0 0 10px var(--text-color)';
+        });
+    });
+
+    // Additional details about the person
+    const aboutSection = document.querySelector('.animated-details');
+    const additionalDetails = document.createElement('p');
+    additionalDetails.textContent = "In addition to my design expertise, I am an avid learner who constantly seeks to expand my skill set. I have a strong foundation in web development, including HTML, CSS, and JavaScript, which allows me to bridge the gap between design and functionality. I am also passionate about mentoring aspiring designers and sharing my knowledge through workshops and online tutorials. My goal is to inspire others to embrace creativity and innovation in their work.";
+    additionalDetails.style.marginTop = '20px';
+    additionalDetails.style.animation = 'fadeInUp 1.5s ease-in-out';
+    aboutSection.appendChild(additionalDetails);
+
+    // Adding bar chart for skills
+    const chartSection = document.createElement('section');
+    chartSection.classList.add('section');
+    chartSection.innerHTML = `
+        <h2>Skills Overview</h2>
+        <canvas id="skillsChart" width="400" height="200"></canvas>
+    `;
+    document.querySelector('.container').appendChild(chartSection);
+
+    // Add device view options
+    const deviceViewSection = document.createElement('section');
+    deviceViewSection.classList.add('section');
+    deviceViewSection.innerHTML = `
+        <h2>Device View Options</h2>
+        <div class="device-view-buttons">
+            <button onclick="setDeviceView('mobile')">Mobile View</button>
+            <button onclick="setDeviceView('tablet')">Tablet View</button>
+            <button onclick="setDeviceView('laptop')">Laptop View</button>
+        </div>
+    `;
+    document.querySelector('.container').appendChild(deviceViewSection);
+
+    function setDeviceView(view) {
+        const body = document.body;
+        body.style.transition = 'width 0.3s ease-in-out';
+        if (view === 'mobile') {
+            body.style.width = '375px';
+        } else if (view === 'tablet') {
+            body.style.width = '768px';
+        } else if (view === 'laptop') {
+            body.style.width = '1024px';
+        }
+    }
+
+    const deviceViewStyles = document.createElement('style');
+    deviceViewStyles.textContent = `
+        .device-view-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .device-view-buttons button {
+            padding: 10px 20px;
+            background: var(--highlight-color);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .device-view-buttons button:hover {
+            background: var(--text-color);
+        }
+    `;
+    document.head.appendChild(deviceViewStyles);
+
+    const script = document.createElement('script');
+    script.src = "https://cdn.jsdelivr.net/npm/chart.js";
+    script.onload = () => {
+        const ctx = document.getElementById('skillsChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Graphic Design', 'UI/UX', 'Web Development', 'Illustration', 'Branding'],
+                datasets: [{
+                    label: 'Skill Proficiency (%)',
+                    data: [95, 90, 80, 85, 88],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        const pieCtx = document.getElementById('timeChart').getContext('2d');
+        new Chart(pieCtx, {
+            type: 'pie',
+            data: {
+                labels: ['Designing', 'Learning', 'Mentoring', 'Research', 'Other'],
+                datasets: [{
+                    data: [40, 20, 15, 15, 10],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+    };
+    document.body.appendChild(script);
+</script>
+<style>
+    /* Responsive styles */
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .portfolio-item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    canvas {
+        max-width: 100%;
+        height: auto;
+    }
+
+    @media (max-width: 768px) {
+        header h1 {
+            font-size: 2rem;
+        }
+
+        header p {
+            font-size: 1rem;
+        }
+
+        .theme-toggle {
+            font-size: 0.9rem;
+            padding: 8px 15px;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        header h1 {
+            font-size: 1.5rem;
+        }
+
+        header p {
+            font-size: 0.9rem;
+        }
+
+        .theme-toggle {
+            font-size: 0.8rem;
+            padding: 5px 10px;
+        }
+
+        .section h2 {
+            font-size: 1.2rem;
+        }
+    }
+</style>
+
